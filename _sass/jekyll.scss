@@ -1,5 +1,6 @@
 @import "normalize";
 @import "variables";
+@import "fonts";
 
 @mixin large {
 	@media screen and (min-width: #{$large-breakpoint}) {
@@ -36,7 +37,7 @@
 body {
 	padding: 0;
 	margin: 0;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 18px;
 	line-height: 1.5;
 	color: $body-text-color;

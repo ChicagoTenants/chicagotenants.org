@@ -1,0 +1,43 @@
+@font-face {
+	font-family: "Open Sans";
+	src: url("../fonts/OpenSans/OpenSans-Regular.eot"); 
+	src: url("../fonts/OpenSans/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), 
+		url("../fonts/OpenSans/OpenSans-Regular.woff2") format("woff2"), 
+		url("../fonts/OpenSans/OpenSans-Regular.woff") format("woff"), 
+		url("../fonts/OpenSans/OpenSans-Regular.ttf") format("truetype");
+		font-weight: regular;
+		font-style: normal;
+}
+
+@font-face {
+	font-family: "Open Sans";
+	src: url("../fonts/OpenSans/OpenSans-RegularItalic.eot"); 
+	src: url("../fonts/OpenSans/OpenSans-RegularItalic.eot?#iefix") format("embedded-opentype"), 
+		url("../fonts/OpenSans/OpenSans-RegularItalic.woff2") format("woff2"), 
+		url("../fonts/OpenSans/OpenSans-RegularItalic.woff") format("woff"), 
+		url("../fonts/OpenSans/OpenSans-RegularItalic.ttf") format("truetype");
+		font-weight: regular;
+		font-style: italic;
+}
+
+@font-face {
+	font-family: "Open Sans";
+	src: url("../fonts/OpenSans/OpenSans-Bold.eot"); 
+	src: url("../fonts/OpenSans/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), 
+		url("../fonts/OpenSans/OpenSans-Bold.woff2") format("woff2"), 
+		url("../fonts/OpenSans/OpenSans-Bold.woff") format("woff"), 
+		url("../fonts/OpenSans/OpenSans-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Open Sans";
+	src: url("../fonts/OpenSans/OpenSans-BoldItalic.eot"); 
+	src: url("../fonts/OpenSans/OpenSans-BoldItalic.eot?#iefix") format("embedded-opentype"), 
+		url("../fonts/OpenSans/OpenSans-BoldItalic.woff2") format("woff2"), 
+		url("../fonts/OpenSans/OpenSans-BoldItalic.woff") format("woff"), 
+		url("../fonts/OpenSans/OpenSans-BoldItalic.ttf") format("truetype");
+	font-weight: bold;
+	font-style: italic;
+}
