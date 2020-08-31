@@ -17,9 +17,16 @@
 	{% include seo.html %}
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" href="{{ '/assets/images/favicon.ico' | relative_url }}">
-	<link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+	
+	<!-- icons for IE 9 and below -->
+	<!--[if IE]><link rel="shortcut icon" href="{{ '/assets/images/favicon.ico' | relative_url }}"><![endif]-->
+	<!-- icons for touch - iOS and Android 2.1+  --> 
+	<link rel="apple-touch-icon" href="{{ '/assets/images/apple-touch-icon.png' | relative_url }}">
+	<!-- icons for Firefox, Chrome, Safari, IE 11+ and Opera -->
+	<link rel="icon" href="{{ 'assets/images/favicon.png' | relative_url }}">
 
+	<!-- Theme -->
+	<link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 	<!-- FontAwesome styles -->
 	<link rel="stylesheet" href="{{ '/assets/css/FontAwesome.css' | relative_url }}">
 
