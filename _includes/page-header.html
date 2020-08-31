@@ -1,17 +1,17 @@
 <header class="page-header" role="banner">
-	{% if site.banner.link %}
+	{% if page.banner-link %}
 		<div id="banner">
 			<div id="banner-content">
 				<a id="banner-link" href="{{ site.banner.link | relative_url }}">
-					<p>{{ site.banner.text | markdownify | remove: "<p>" | remove: "</p>" | strip_newlines }}<i class="fas fa-arrow-right"></i></p>
+					<p>{{ page.banner-text | markdownify | remove: "<p>" | remove: "</p>" | strip_newlines }}<i class="fas fa-arrow-right"></i></p>
 				</a>
 			</div>
 			<div style="clear:both"></div>
 		</div>
-	{% elsif site.banner.text %}
+	{% elsif page.banner-text %}
 		<div id="banner">
 			<p id="banner-content">
-				{{ site.banner.text | markdownify | remove: "<p>" | remove: "</p>" }}
+				{{ page.banner-text | markdownify | remove: "<p>" | remove: "</p>" }}
 			</p>
 			<div style="clear:both"></div>
 		</div>

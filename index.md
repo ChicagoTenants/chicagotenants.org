@@ -1,11 +1,13 @@
 ---
+banner-text: "**Here's a banner:** you can turn it off/on, add styling, and link to other pages"
+banner-link: ""
 ---
 
 {% include button.html text="Call our hotline" link="/" %}
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-[Link to another page](/).
+[Link to another page]().
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
