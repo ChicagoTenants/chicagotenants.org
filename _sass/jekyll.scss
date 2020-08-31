@@ -183,8 +183,53 @@ p {
 	}
 }
 
-#logo {
-	width: 12rem;
+#logo-container {
+	position: relative;
+	width: 100%;
+	height: 16rem;
+	padding: 2rem;
+	overflow: hidden;
+	white-space: nowrap;
+	border: 1px solid $red-3;
+	border-radius: 6px;
+	background: url(../images/LtB.png);
+	background-position: center;
+  	background-size: cover;
+
+  	#overlay {
+  		position: absolute;
+  		top: 0;
+  		left: 0;
+  		width: 100%;
+  		height: 100%;
+  		background-color: $red-2;
+		background-image: linear-gradient(-180deg, $red-1, $red-2 90%);
+		opacity: .5;
+  	}
+
+  	.logo {
+  		position: relative;
+		width: 12rem;
+		margin-right: 1rem;
+	}
+
+	@include medium {
+		height: 12rem;
+		padding: 1rem;
+
+		.logo {
+			width: 10rem;
+		}
+	}
+
+	@include small {
+		height: 10rem;
+		padding: 1rem;
+
+		.logo {
+			width: 8rem;
+		}
+	}
 }
 
 #banner-content,

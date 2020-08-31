@@ -23,6 +23,12 @@
 				<li>/ <a href="{{ item.url | absolute_url }}">{{ item.language }}</a></li>
 			{% endfor %}
 		</ul>
-		<a href="{{ '/' | absolute_url }}"><img id="logo" src="{{ 'assets/images/CTM-logo.svg' | relative_url }}" onerror="this.src='assets/images/CTM-logo.png'; this.onerror=null;" draggable="false" alt="Circle with Chicago Tenants Movement, four stars from the Chicago flag, and silhouetted buildings."></a>
+		<a href="{{ '/' | absolute_url }}">
+			<div id="logo-container">
+				<div id="overlay"></div>
+				<img class="logo" src="{{ 'assets/images/CTM-logo.svg' | relative_url }}" onerror="this.src='assets/images/CTM-logo.png'; this.onerror=null;" draggable="false" alt="Circle with Chicago Tenants Movement, four stars from the Chicago flag, and silhouetted buildings.">
+				<img class="logo" src="{{ 'assets/images/CTM-logo-es.svg' | relative_url }}" onerror="this.src='assets/images/CTM-logo-es.png'; this.onerror=null;" draggable="false" alt="Círculo con Movimiento de Inquilinxs de Chicago, cuatro estrellas de la bandera de Chicago y siluetas de edificios.">
+			</div>
+		</a>
 	</div>
 </header>
