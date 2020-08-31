@@ -173,13 +173,20 @@ p {
 	}
 }
 
+#languages li {
+	display: inline-block;
+	margin-top: 1rem;
+	font-size: .75rem;
+}
+
 #banner-content,
-.project-area,
+#languages,
 .main-content {
+	margin: 0 auto;
+
 	@include large {
 		max-width: 56rem;
 		padding: 0 6rem;
-		margin: 0 auto;
 	}
 
 	@include medium {
@@ -192,7 +199,7 @@ p {
 }
 
 #banner-content,
-.project-area,
+#languages,
 .main-content {
 	@include small {
 		padding: 0 1rem;

@@ -1,10 +1,11 @@
 ---
-banner-text: "**Here's a banner:** you can turn it off/on, add styling, and link to other pages"
+banner-text: "**Here's a banner:** you can enable it and link to other pages"
 banner-link: ""
+
 title: Home
 ---
 
-{% include button.html text="Call our hotline" link="/" %}
+{% include button.html text="Call our hotline" link="" %}
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 

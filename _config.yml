@@ -11,3 +11,10 @@ defaults:
     values:
       layout: default
       image: ""
+
+# Manage lists of content with collections
+# https://jekyllrb.com/docs/collections/
+collections:
+  translations:
+    output: true
+    permalink: /:path/
