@@ -174,13 +174,21 @@ p {
 	}
 }
 
-#languages li {
-	display: inline-block;
-	margin-top: 1rem;
+#languages {
+	padding-left: 0;
+
+	li {
+		display: inline-block;
+		
+	}
+}
+
+#logo {
+	width: 12rem;
 }
 
 #banner-content,
-#languages,
+#top-area,
 .main-content {
 	margin: 0 auto;
 
@@ -199,7 +207,7 @@ p {
 }
 
 #banner-content,
-#languages,
+#top-area,
 .main-content {
 	@include small {
 		padding: 0 1rem;
