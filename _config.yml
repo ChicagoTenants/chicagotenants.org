@@ -10,7 +10,7 @@ defaults:
       path: "" # All files
     values:
       layout: default
-      image: ""
+      image: "assets/images/og-image.png"
 
 # Manage lists of content with collections
 # https://jekyllrb.com/docs/collections/
