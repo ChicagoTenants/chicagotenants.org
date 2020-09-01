@@ -14,7 +14,7 @@
 <meta property="og:title" content="{{ title | strip_newlines }}" />
 
 <!-- Locale -->
-<meta property="og:locale" content="en_US" />
+<meta property="og:locale" content="{{ page.language-code | strip_newlines }}" />
 
 {% if page.description %}
 	{%- capture description -%}

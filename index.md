@@ -1,4 +1,7 @@
 ---
+language-name: English
+language-code: en_US
+
 banner-text: "**By order of the Governor:** all Illinois evictions are illegal through 9/19/20"
 
 title: Home

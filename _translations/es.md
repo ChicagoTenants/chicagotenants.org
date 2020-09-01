@@ -1,5 +1,6 @@
 ---
-language: Español
+language-name: Español
+language-code: es_LA
 
 banner-text: "**Por orden del Gobernador:** todos los desalojos de Illinois son ilegales hasta el 9/19/20"
 
