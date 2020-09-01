@@ -5,20 +5,13 @@ banner-link: ""
 title: Home
 ---
 
-{% include button.html text="Call our hotline" link="" %}
+Chicago Tenant's Movement (CTM) is a coalition of North, West, and South Side community organizations. Evictions are immoral. Community stops evictions.
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+**Services we offer**
+- Know-your-rights information sessions
+- Legal aid via the Uptown People's Law Center
+- Reversing illegal lockouts and utility shut-offs
 
-[Link to another page]().
+{% include button.html text="Call our tenant hotline" link="" %}
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
-# Header 1
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+_Telephone: 312-917-8053. Hours: Tuesdays and Thursdays, 12–2pm, 6–8pm._
