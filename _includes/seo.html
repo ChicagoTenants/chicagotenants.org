@@ -1,32 +1,22 @@
-{% if page.title %}
-	{%- capture title -%}
-		{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }} | {{ site.title | default: site.github.repository_name | markdownify | remove: "<p>" | remove: "</p>" }}
-	{%- endcapture -%}
-	<title>{{ title | strip_newlines }}</title>
-{% else %}
-	{%- capture title -%}
-		{{ site.title | default: site.github.repository_name | markdownify | remove: "<p>" | remove: "</p>" }} | {{ site.description | default: site.github.project_tagline | markdownify | remove: "<p>" | remove: "</p>" }}
-	{%- endcapture -%}
-	<title>{{ title | strip_newlines }}</title>
-{% endif %}
+{%- capture siteName -%}
+	{{ page.translated-site-name | default: site.title | markdownify | remove: "<p>" | remove: "</p>" }}
+{% endcapture %}
 
-<!-- Set title based on conditionals -->
+{%- capture title -%}
+	{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }} | {{ siteName }}
+{% endcapture %}
+
+<!-- Set title -->
 <meta property="og:title" content="{{ title | strip_newlines }}" />
 
 <!-- Locale -->
-<meta property="og:locale" content="{{ page.language-code | strip_newlines }}" />
+<meta property="og:locale" content="{{ page.language-code }}" />
 
-{% if page.description %}
-	{%- capture description -%}
-		{{ page.description | markdownify | remove: "<p>" | remove: "</p>" }}
-	{%- endcapture -%}
-{% else %}
-	{%- capture description -%}
-		{{ site.description | default: site.github.project_tagline | markdownify | remove: "<p>" | remove: "</p>" }}
-	{%- endcapture -%}
-{% endif %}
+{%- capture description -%}
+	{{ page.translated-site-description | default: site.description | markdownify | remove: "<p>" | remove: "</p>" }}
+{% endcapture %}
 
-<!-- Set descriptions based on conditionals -->
+<!-- Set descriptions -->
 <meta name="description" content="{{ description | strip_newlines }}" />
 <meta property="og:description" content="{{ description | strip_newlines }}" />
 
@@ -34,23 +24,7 @@
 <link rel="canonical" href="{{ page.url | absolute_url }}" />
 <meta property="og:url" content="{{ page.url | absolute_url }}" />
 
-{% if site.title %}
-	{%- capture siteName -%}
-		{{ site.title | markdownify | remove: "<p>" | remove: "</p>" }}
-	{%- endcapture -%}
-{% else %}
-	{%- capture siteName -%}
-		{{ site.title | default: site.github.repository_name | markdownify | remove: "<p>" | remove: "</p>" }}
-	{%- endcapture -%}
-{% endif %}
-
 <meta property="og:site_name" content="{{ siteName | strip_newlines }}" />
 <meta property="og:image" content="{{ page.image | absolute_url }}" />
 
-{% if page.image == "assets/images/og-image.png" %}
-	<!-- Small Twitter preview for default logo -->
-	<meta name="twitter:card" content="summary">
-{% else %}
-	<!-- Large Twitter preview for custom images -->
-	<meta name="twitter:card" content="summary_large_image">
-{% endif %}
+<meta name="twitter:card" content="summary">
