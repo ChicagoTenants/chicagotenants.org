@@ -1,7 +1,7 @@
 ---
 language: Español
 
-banner-text: "**Por orden del Gobernador:** todos los desalojos de Illinois son ilegales hasta el 9/19/20."
+banner-text: "**Por orden del Gobernador:** todos los desalojos de Illinois son ilegales hasta el 9/19/20"
 
 title: Inicio
 ---
@@ -15,4 +15,4 @@ El Movimiento de Inquilinxs de Chicago (CTM) es una coalición de organizaciones
 
 {% include button.html text="Llame a nuestra línea directa para inquilinos" %}
 
-_Teléfono: se lanza el 2 de septiembre._
+_Teléfono: se lanza el 2 de septiembre_

@@ -1,5 +1,5 @@
 ---
-banner-text: "**By order of the Governor:** all Illinois evictions are illegal through 9/19/20."
+banner-text: "**By order of the Governor:** all Illinois evictions are illegal through 9/19/20"
 
 title: Home
 ---
@@ -13,4 +13,4 @@ Chicago Tenant's Movement (CTM) is a coalition of North, West, and South Side co
 
 {% include button.html text="Call our tenant hotline" %}
 
-_Telephone: launches September 2nd._
+_Telephone: launches September 2nd_
