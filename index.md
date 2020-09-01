@@ -1,6 +1,5 @@
 ---
-banner-text: "**Here's a banner:** you can enable it and link to other pages"
-banner-link: ""
+banner-text: "**By order of the Governor:** all Illinois evictions are illegal through 9/19/20."
 
 title: Home
 ---
@@ -12,6 +11,6 @@ Chicago Tenant's Movement (CTM) is a coalition of North, West, and South Side co
 - Legal aid via the Uptown People's Law Center
 - Reversing illegal lockouts and utility shut-offs
 
-{% include button.html text="Call our tenant hotline" link="" %}
+{% include button.html text="Call our tenant hotline" %}
 
-_Telephone: 312-917-8053. Hours: Tuesdays and Thursdays, 12–2pm, 6–8pm._
+_Telephone: launches September 2nd._

@@ -1,3 +1,7 @@
 <div class="btn-container">
-	<a href="{{ include.link }}" class="btn">{{ include.text | markdownify | remove: "<p>" | remove: "</p>" }}</a>
+	{% if include.link %}
+		<a href="{{ include.link }}" class="btn active">{{ include.text | markdownify | remove: "<p>" | remove: "</p>" }}</a>
+	{% else %}
+		<div class="btn">{{ include.text | markdownify | remove: "<p>" | remove: "</p>" }}</div>
+	{% endif %}
 </div>

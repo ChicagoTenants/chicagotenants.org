@@ -1,8 +1,7 @@
 ---
 language: Español
 
-banner-text: "**Aquí hay una pancarta:** puede habilitarlo y vincularlo a otras páginas"
-banner-link: ""
+banner-text: "**Por orden del Gobernador:** todos los desalojos de Illinois son ilegales hasta el 9/19/20."
 
 title: Inicio
 ---
@@ -14,6 +13,6 @@ El Movimiento de Inquilinxs de Chicago (CTM) es una coalición de organizaciones
 - Asistencia jurídica a través del Uptown People's Law Center
 - Revertir bloqueos ilegales y cortes de servicios públicos
 
-{% include button.html text="Llame a nuestra línea directa para inquilinxs" link="" %}
+{% include button.html text="Llame a nuestra línea directa para inquilinos" %}
 
-_Teléfono: 312-917-8053. Horario: martes y jueves, 12–2pm, 6–8pm._
+_Teléfono: se lanza el 2 de septiembre._
