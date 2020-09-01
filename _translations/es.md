@@ -2,7 +2,7 @@
 language-name: Español
 language-code: es_LA
 translated-site-name: Movimiento de Inquilinxs de Chicago
-translated-site-description: Conozca sus derechos como inquilino y obtenga ayuda en su vecindario.
+translated-site-description: Conozca sus derechos como inquilino y obtenga ayuda en su barrio.
 
 banner-text: "**Por orden del Gobernador:** todos los desalojos de Illinois son ilegales hasta el 9/19/20"
 
