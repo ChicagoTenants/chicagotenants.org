@@ -6,7 +6,8 @@
 	{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }} | {{ siteName }}
 {% endcapture %}
 
-<!-- Set title -->
+<!-- Set titles -->
+<title>{{ title | strip_newlines }}</title>
 <meta property="og:title" content="{{ title | strip_newlines }}" />
 
 <!-- Locale -->
