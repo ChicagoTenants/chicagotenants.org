@@ -13,4 +13,5 @@ If you want to add additional site translations, go to `_translations` and dupli
 - Inside the file, `language-name: Español` sets the language's display name as `Español`.
 - `language-code: es_LA` helps search engines recognize the page's language.
 - `translated-site-name` and `translated-site-description` show up in search results.
+- `image` defines a custom preview image for social media. It contains a language-specific logo. If you leave this blank, the English logo will be used.
 - The list of languages at the top of the website is automatically populated by the files inside  `_translations`.
