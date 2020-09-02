@@ -2,7 +2,7 @@
 language-name: Español
 language-code: es_LA
 translated-site-name: Movimiento de Inquilinxs de Chicago
-translated-site-description: Conozca sus derechos como inquilino y obtenga ayuda en su barrio.
+translated-site-description: Conozca sus derechos como inquilinx y obtenga ayuda en su barrio.
 
 banner-text: "**Por orden de los CDC:** 
 la mayoría de los desalojos son ilegales hasta el 12/31/20. Lea la declaración completa de los CDC"
