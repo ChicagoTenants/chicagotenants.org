@@ -1,0 +1,9 @@
+<footer class="site-footer">
+	{%- capture siteName -%}
+		{{ page.translated-site-name | default: site.title | markdownify | remove: "<p>" | remove: "</p>" }}
+	{% endcapture %}
+
+	<p id="name"><b>{{ siteName }}</b></p>
+	<p id="top"><a href="#">Back to top</a></p>
+	<div style="clear: both;"></div> 
+</footer>

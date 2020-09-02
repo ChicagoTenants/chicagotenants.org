@@ -2,7 +2,7 @@
 	{% if page.banner-link %}
 		<div id="banner">
 			<div id="banner-content">
-				<a id="banner-link" href="{{ site.banner.link | relative_url }}">
+				<a id="banner-link" href="{{ page.banner-link | relative_url }}">
 					<p>{{ page.banner-text | markdownify | remove: "<p>" | remove: "</p>" | strip_newlines }}<i class="fas fa-arrow-right"></i></p>
 				</a>
 			</div>

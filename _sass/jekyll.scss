@@ -74,6 +74,7 @@ h6 {
 
 h5,
 h6 {
+	color: $secondary-text-color;
 	text-transform: uppercase;
 	letter-spacing: .125em;
 }
@@ -117,7 +118,7 @@ p {
 }
 
 .btn-container {
-	margin: .5rem .5rem .5rem 0;
+	margin: 1rem 1rem 1rem 0;
 }
 
 .btn {
@@ -308,7 +309,9 @@ p {
 	table {
 		display: block;
 		width: 100%;
+		margin: 1rem 0;
 		overflow: auto;
+		text-align: left;
 		word-break: normal;
 		word-break: keep-all; // For Firefox to horizontally scroll wider tables.
 		-webkit-overflow-scrolling: touch;
@@ -344,5 +347,38 @@ p {
 		border-width: 2px;
 		border-style: solid;
 		border-color: $border-color;
+	}
+}
+
+.site-footer {
+	display: block;
+	width: 100%;
+	padding-top: 2rem;
+	margin: 2rem 0;
+	font-size: 1rem;
+	border-top: solid 1px $border-color;
+
+	p {
+		margin-top: 0;
+	}
+
+	#name {
+		float: left;
+	}
+
+	#top {
+		float: right;
+		text-align: right;
+	}
+
+	@include small {
+		#name {
+			float: none;
+		}
+
+		#top {
+			float: none;
+			text-align: left;
+		}
 	}
 }
