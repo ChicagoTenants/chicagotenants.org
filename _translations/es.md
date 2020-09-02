@@ -5,7 +5,7 @@ translated-site-name: Movimiento de Inquilinxs de Chicago
 translated-site-description: Conozca sus derechos como inquilinx y obtenga ayuda en su barrio.
 
 banner-text: "**Por orden de los CDC:** 
-la mayoría de los desalojos son ilegales hasta el 12/31/20. Lea la declaración completa de los CDC"
+la mayoría de los desalojos son ilegales hasta el 12/31/20. Lea la declaración completa"
 banner-link: "https://s3.amazonaws.com/public-inspection.federalregister.gov/2020-19654.pdf"
 back-to-top-text: Ve arriba
 
