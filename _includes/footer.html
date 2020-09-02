@@ -4,6 +4,6 @@
 	{% endcapture %}
 
 	<p id="name"><b>{{ siteName }}</b></p>
-	<p id="top"><a href="#">Back to top</a></p>
+	<p id="top"><a href="#">{{ page.back-to-top-text | markdownify | remove: "<p>" | remove: "</p>" }}</a></p>
 	<div style="clear: both;"></div> 
 </footer>
