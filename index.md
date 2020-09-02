@@ -9,7 +9,7 @@ back-to-top-text: Back to top
 title: Home
 ---
 
-Chicago Tenant's Movement (CTM) is a coalition of North, West, and South Side community organizations. Evictions are immoral. Community stops evictions.
+Chicago Tenants Movement (CTM) is a coalition of North, West, and South Side community organizations. Evictions are immoral. Community stops evictions.
 
 ----
 
