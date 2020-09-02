@@ -30,7 +30,7 @@ Los operadores de la línea directa pueden ayudar a conectar a los inquilinxs co
 - Asistencia legal (si ha recibido una notificación o presentación de desalojo)
 - Redes locales de ayuda mutua
 
-##### Horas de funcionamiento
+##### Horas de operación
 
 | Dias                | Madrugada | Noche   |
 |---------------------|-----------|---------|
