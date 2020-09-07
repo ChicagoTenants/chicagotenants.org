@@ -1,4 +1,4 @@
-# chicagotenants.org
+# CTM website
 
 Portal with a directory of legal resources and community contacts.
 
