@@ -372,13 +372,9 @@ p {
 		margin-top: 0;
 	}
 
-	#left-column {
+	#left-side {
 		float: left;
 		width: 50%;
-
-		p {
-			max-width: 24rem;
-		}
 
 		#social-container {
 			padding-top: .5rem;
@@ -410,8 +406,9 @@ p {
 	}
 
 	@include small {
-		#left-column {
+		#left-side {
 			float: none;
+			width: 100%;
 		}
 
 		#top {
