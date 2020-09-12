@@ -1,0 +1,21 @@
+<footer class="site-footer">
+	{%- capture siteName -%}
+		{{ page.translated-site-name | default: site.title | markdownify | remove: "<p>" | remove: "</p>" }}
+	{% endcapture %}
+
+	<div id="left-column">
+		<p><b>{{ siteName }}</b></p>
+		<div id="social-container">
+			<a id="twitter" class="social" href="https://twitter.com/ChiTenants">
+				<i class="fab fa-twitter"></i>
+			</a>
+			<a id="instagram" class="social" href="https://www.instagram.com/chicagotenants/">
+				<i class="fab fa-instagram"></i>
+			</a>
+			<div style="clear: both;"></div> 
+		</div>
+	</div>
+
+	<p id="top"><a href="#">{{ page.back-to-top-text | markdownify | remove: "<p>" | remove: "</p>" }}</a></p>
+	<div style="clear: both;"></div> 
+</footer>

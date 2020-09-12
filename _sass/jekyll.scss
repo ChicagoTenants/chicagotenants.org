@@ -372,8 +372,36 @@ p {
 		margin-top: 0;
 	}
 
-	#name {
+	#left-column {
 		float: left;
+		width: 50%;
+
+		p {
+			max-width: 24rem;
+		}
+
+		#social-container {
+			padding-top: .5rem;
+
+			.social {
+				float: left;
+				width: 1.5rem;
+				height: 1.5rem;
+				margin-right: .5rem;
+				text-align: center;
+				font-size: 1rem;
+				color: $white;
+				border-radius: .5rem;
+			}
+
+			#twitter {
+				background-color: #1da1f2;
+			}
+
+			#instagram {
+				background: radial-gradient(circle at 20% 120%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+			}
+		}
 	}
 
 	#top {
@@ -382,12 +410,13 @@ p {
 	}
 
 	@include small {
-		#name {
+		#left-column {
 			float: none;
 		}
 
 		#top {
 			float: none;
+			margin-top: 1.5rem;
 			text-align: left;
 		}
 	}

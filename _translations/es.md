@@ -37,7 +37,7 @@ Los operadores de la línea directa pueden ayudar a conectar a los inquilinxs co
 |---------------------|-----------|---------|
 | Miércoles a domingo | 10am-2pm  | 5-9pm   |
 
-{% include button.html text="Llame a nuestra línea directa al 773-657-8700" link="tel:+17736578700" %}
+{% include comp-button.html text="Llame a nuestra línea directa al 773-657-8700" link="tel:+17736578700" %}
 
 ----
 

@@ -32,7 +32,7 @@ Hotline operators can help connect tenants to...
 |------------------|----------|---------|
 | Wednesday-Sunday | 10am-2pm | 5-9pm   |
 
-{% include button.html text="Call our hotline at 773-657-8700" link="tel:+17736578700" %}
+{% include comp-button.html text="Call our hotline at 773-657-8700" link="tel:+17736578700" %}
 
 ----
 
