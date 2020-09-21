@@ -1,21 +1,8 @@
 ---
-language-name: Español
-language-code: es_LA
-translated-site-name: Movimiento de Inquilinxs de Chicago
-translated-site-description: Conozca sus derechos como inquilinx y obtenga ayuda en su barrio.
-image: "assets/images/og-image-es.png"
-
-banner-text: "**Por orden de los CDC:** 
-la mayoría de los desalojos son ilegales hasta el 12/31/20. Lea la declaración completa"
-banner-link: "https://s3.amazonaws.com/public-inspection.federalregister.gov/2020-19654.pdf"
-back-to-top-text: Ve arriba
-
+lang-ref: homepage
 title: Inicio
+subhead: El Movimiento de Inquilinxs de Chicago (CTM) es una coalición de organizaciones comunitarias del Norte, Oeste y Sur. Los desalojos son inmorales. Comunidad detiene los desalojos.
 ---
-
-El Movimiento de Inquilinxs de Chicago (CTM) es una coalición de organizaciones comunitarias del Norte, Oeste y Sur. Los desalojos son inmorales. Comunidad detiene los desalojos.
-
-----
 
 ### Organiza con tus vecinxs 
 

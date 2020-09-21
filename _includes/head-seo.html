@@ -1,23 +1,32 @@
-{%- capture siteName -%}
-	{{ page.translated-site-name | default: site.title | markdownify | remove: "<p>" | remove: "</p>" }}
-{% endcapture %}
+{% if page.title %}
+	{%- capture title -%}
+		{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }} | {{ site.data.translations.title.[page.lang] | default: site.github.repository_name | markdownify | remove: "<p>" | remove: "</p>" }}
+	{%- endcapture -%}
+	<title>{{ title | strip_newlines }}</title>
+{% else %}
+	{%- capture title -%}
+		{{ site.data.translations.title.[page.lang] | default: site.github.repository_name | markdownify | remove: "<p>" | remove: "</p>" }} | {{ site.data.translations.description.[page.lang] | default: site.github.project_tagline | markdownify | remove: "<p>" | remove: "</p>" }}
+	{%- endcapture -%}
+	<title>{{ title | strip_newlines }}</title>
+{% endif %}
 
-{%- capture title -%}
-	{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }} | {{ siteName }}
-{% endcapture %}
-
-<!-- Set titles -->
-<title>{{ title | strip_newlines }}</title>
+<!-- Set title based on conditionals -->
 <meta property="og:title" content="{{ title | strip_newlines }}" />
 
 <!-- Locale -->
-<meta property="og:locale" content="{{ page.language-code }}" />
+<meta property="og:locale" content="{{ page.lang }}" />
 
-{%- capture description -%}
-	{{ page.translated-site-description | default: site.description | markdownify | remove: "<p>" | remove: "</p>" }}
-{% endcapture %}
+{% if page.description %}
+	{%- capture description -%}
+		{{ page.description | markdownify | remove: "<p>" | remove: "</p>" }}
+	{%- endcapture -%}
+{% else %}
+	{%- capture description -%}
+		{{ site.data.translations.description.[page.lang] | default: site.github.project_tagline | markdownify | remove: "<p>" | remove: "</p>" }}
+	{%- endcapture -%}
+{% endif %}
 
-<!-- Set descriptions -->
+<!-- Set descriptions based on conditionals -->
 <meta name="description" content="{{ description | strip_newlines }}" />
 <meta property="og:description" content="{{ description | strip_newlines }}" />
 
@@ -25,7 +34,16 @@
 <link rel="canonical" href="{{ page.url | absolute_url }}" />
 <meta property="og:url" content="{{ page.url | absolute_url }}" />
 
+{% if site.data.translations.title.[page.lang] %}
+	{%- capture siteName -%}
+		{{ site.data.translations.title.[page.lang] | markdownify | remove: "<p>" | remove: "</p>" }}
+	{%- endcapture -%}
+{% else %}
+	{%- capture siteName -%}
+		{{ site.data.translations.title.[page.lang] | default: site.github.repository_name | markdownify | remove: "<p>" | remove: "</p>" }}
+	{%- endcapture -%}
+{% endif %}
+
 <meta property="og:site_name" content="{{ siteName | strip_newlines }}" />
 <meta property="og:image" content="{{ page.image | absolute_url }}" />
-
 <meta name="twitter:card" content="summary">

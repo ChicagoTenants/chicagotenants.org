@@ -1,17 +1,8 @@
 ---
-language-name: English
-language-code: en_US
-
-banner-text: "**By order of the CDC:** most evictions are illegal through 12/31/20. Read the CDC's full statement"
-banner-link: "https://s3.amazonaws.com/public-inspection.federalregister.gov/2020-19654.pdf"
-back-to-top-text: Back to top
-
+lang-ref: homepage
 title: Home
+subhead: Chicago Tenants Movement (CTM) is a coalition of North, West, and South Side community organizations. Evictions are immoral. Community stops evictions.
 ---
-
-Chicago Tenants Movement (CTM) is a coalition of North, West, and South Side community organizations. Evictions are immoral. Community stops evictions.
-
-----
 
 ### Organize with your neighbors 
 

@@ -1,34 +1,63 @@
 <header class="page-header" role="banner">
-	{% if page.banner-link %}
+	{% if site.data.banner.link.[page.lang] %}
 		<div id="banner">
 			<div id="banner-content">
 				<a id="banner-link" href="{{ page.banner-link | relative_url }}">
-					<p>{{ page.banner-text | markdownify | remove: "<p>" | remove: "</p>" | strip_newlines }}<i class="fas fa-arrow-right"></i></p>
+					<p>{{ site.data.banner.text.[page.lang] | markdownify | remove: "<p>" | remove: "</p>" | strip_newlines }}<i class="fas fa-arrow-right"></i></p>
 				</a>
 			</div>
 			<div style="clear:both"></div>
 		</div>
-	{% elsif page.banner-text %}
+	{% elsif site.data.banner.text.[page.lang] %}
 		<div id="banner">
 			<p id="banner-content">
-				{{ page.banner-text | markdownify | remove: "<p>" | remove: "</p>" }}
+				{{ site.data.banner.text.[page.lang] | markdownify | remove: "<p>" | remove: "</p>" }}
 			</p>
 			<div style="clear:both"></div>
 		</div>
 	{% endif %}
 	<div id="top-area">
 		<ul id="languages">
-			<li><a href="{{ '/' | absolute_url }}">English</a></li>
-			{% for item in site.translations %}
-				<li>/ <a href="{{ item.url | absolute_url }}">{{ item.language-name }}</a></li>
+			{% for collection in site.collections %}
+				{%- assign name = collection.label -%}
+				{%- assign languages = site.[name] | where: "lang-ref", page.lang-ref | sort: "lang" -%}
+				{%- if languages.size > 1 -%}
+					{%- for item in languages -%}
+						{% if item.lang == page.lang %}
+							<li><a href="{{ item.url | relative_url }}"><b>{{ site.data.translations.[item.lang] }}</b></a></li>
+						{% else %}
+							<li><a href="{{ item.url | relative_url }}">{{ site.data.translations.[item.lang] }}</a></li>
+						{% endif %}
+					{%- endfor -%}
+				{%- endif -%}
 			{% endfor %}
 		</ul>
-		<a href="{{ page.url | absolute_url }}">
+
+		{% if site.chapter.url %}
+			{% assign chapterURL = site.chapter.url %}
+		{% elsif page.lang == "en" %}
+			{% assign chapterURL = "/" | relative_url %}
+		{% else %}
+			{% assign chapterURL = page.lang | relative_url %}
+		{% endif %}
+
+		<a href="{{ chapterURL }}">
 			<div id="logo-container">
 				<div id="overlay"></div>
 				<img class="logo" src="{{ 'assets/images/CTM-logo.svg' | relative_url }}" onerror="this.src='assets/images/CTM-logo.png'; this.onerror=null;" draggable="false" alt="Circle with Chicago Tenants Movement, four stars from the Chicago flag, and silhouetted buildings.">
 				<img class="logo" src="{{ 'assets/images/CTM-logo-es.svg' | relative_url }}" onerror="this.src='assets/images/CTM-logo-es.png'; this.onerror=null;" draggable="false" alt="Círculo con Movimiento de Inquilinxs de Chicago, cuatro estrellas de la bandera de Chicago y siluetas de edificios.">
 			</div>
 		</a>
+
+		{% if page.subhead %}
+			{% assign subhead = page.subhead %}
+		{% elsif page.description %}
+			{% assign subhead = page.description %}
+		{% endif %}
+
+		{% if subhead %}
+			<p id="subhead">{{ subhead | markdownify | remove: "<p>" | remove: "</p>" | strip_newlines }}</p>
+			<hr>
+		{% endif %}
 	</div>
 </header>

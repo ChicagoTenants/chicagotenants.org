@@ -1,10 +1,6 @@
 <footer id="site-footer">
-	{%- capture siteName -%}
-		{{ page.translated-site-name | default: site.title | markdownify | remove: "<p>" | remove: "</p>" }}
-	{% endcapture %}
-
 	<div id="left-side">
-		<p><b>{{ siteName }}</b></p>
+		<p><b>{{ site.data.translations.title.[page.lang] | markdownify | remove: "<p>" | remove: "</p>" | strip_newlines }}</b></p>
 		<div id="social-container">
 			<a id="twitter" class="social" href="https://twitter.com/ChiTenants">
 				<i class="fab fa-twitter"></i>
@@ -16,6 +12,6 @@
 		</div>
 	</div>
 
-	<p id="top"><a href="#">{{ page.back-to-top-text | markdownify | remove: "<p>" | remove: "</p>" }}</a></p>
+	<p id="top"><a href="#">{{ site.data.translations.back-to-top.[page.lang] | markdownify | remove: "<p>" | remove: "</p>" | strip_newlines }}</a></p>
 	<div style="clear: both;"></div> 
 </footer>
