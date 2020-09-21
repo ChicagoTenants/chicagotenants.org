@@ -22,3 +22,31 @@ Hello, world!
 ```
 
 Ready to translate `my-new-page`? Create a file named `_pages/es/mi-nueva-pagina` and use the same `lang-ref`.
+
+### Add bottom navigation
+
+1. Create a file named `_data/nav.yml` and paste the following:
+
+```yaml
+elements:
+  - group: 
+    en: Add navigation
+    items:
+      - page:
+          en: Link to a page
+          url: 
+            en: another-page
+      - page:
+          en: Another link
+          url:
+            en: another-page
+  - group:
+    en: Another group
+    items:
+      - page:
+          en: Use Markdown *styling*
+          url:
+            en: another-page
+```
+
+2. Commit these changes. You have a nav!
