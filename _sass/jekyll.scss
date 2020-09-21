@@ -202,6 +202,10 @@ hr {
 }
 
 #top-area {
+	hr {
+		margin-bottom: 0;
+	}
+
 	#languages {
 		padding-left: 0;
 
@@ -261,10 +265,6 @@ hr {
 
 	#subhead {
 		margin-top: 2rem;
-	}
-
-	hr {
-		margin-bottom: 0;
 	}
 }
 
