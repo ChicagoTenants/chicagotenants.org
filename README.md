@@ -14,8 +14,8 @@ To add more pages, create a Markdown file named `_pages/en/my-new-page`. Add thi
 ---
 lang-ref: my-new-page
 title: <!-- sets the window title -->
-description: <!-- displays text below logos, overrides the site description used in search results -->
-subhead: <!-- displays text below logos, doesn't override the site description -->
+description: <!-- overrides the site description used in search results -->
+subhead: <!-- displays text below logos -->
 ---
 
 Hello, world!
