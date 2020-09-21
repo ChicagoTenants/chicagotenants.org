@@ -23,6 +23,19 @@ Hello, world!
 
 Ready to translate `my-new-page`? Create a file named `_pages/es/mi-nueva-pagina` and use the same `lang-ref`.
 
+### Edit the banner
+
+- Banner content is controlled by `_data/banner.yml`. Remove the file's content to hide it.
+- Here's how it works:
+
+```yaml
+text:
+  en: # Style your text with Markdown
+  es: # Add translations
+link: # Declare a link on this line to apply it to all languages
+  en: # Or add language-specific links
+``` 
+
 ### Add bottom navigation
 
 1. Create a file named `_data/nav.yml` and paste the following:
@@ -58,16 +71,3 @@ elements:
 ```
 
 2. Commit these changes. You have a nav!
-
-### Edit the banner
-
-- Banner content is controlled by `_data/banner.yml`. Remove the file's content to hide it.
-- Here's how it works:
-
-```yaml
-text:
-  en: # Style your text with Markdown
-  es: # Add translations
-link: # Declare a link on this line to apply it to all languages
-  en: # Or add language-specific links
-``` 
