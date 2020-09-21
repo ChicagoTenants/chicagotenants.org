@@ -2,6 +2,4 @@
 text:
   en: "**By order of the CDC:** most evictions are illegal through 12/31/20. Read the CDC's full statement"
   es: "**Por orden de los CDC:** la mayoría de los desalojos son ilegales hasta el 12/31/20. Lea la declaración completa"
-link:
-  en: https://s3.amazonaws.com/public-inspection.federalregister.gov/2020-19654.pdf
-  es: https://s3.amazonaws.com/public-inspection.federalregister.gov/2020-19654.pdf
+link: https://s3.amazonaws.com/public-inspection.federalregister.gov/2020-19654.pdf
