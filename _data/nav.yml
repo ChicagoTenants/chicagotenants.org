@@ -1,0 +1,18 @@
+elements:
+  - group: 
+    en: About us
+    es: Sobre nosotros
+    items:
+      - page:
+          en: Community organizations
+          es: Organizaciones comunitarias
+          url: 
+            en: organizations
+            es: es/organizaciones
+      - page:
+          en: Our vision and values
+          es: Nuestra visión y valores
+          url:
+            en: vision
+            es: es/vision
+        

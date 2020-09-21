@@ -17,6 +17,15 @@
 		</div>
 	{% endif %}
 	<div id="top-area">
+		{% if page.lang == "en" %}
+			{% assign homeURL = "/" | relative_url %}
+		{% else %}
+			{% assign homeURL = page.lang | relative_url %}
+		{% endif %}
+		
+		<div id="home">
+			<a href="{{ homeURL }}"><i class="fas fa-home"></i>{{ site.data.translations.home.[page.lang] }}</a>
+		</div>
 		<ul id="languages">
 			{% for collection in site.collections %}
 				{%- assign name = collection.label -%}
@@ -32,15 +41,7 @@
 				{%- endif -%}
 			{% endfor %}
 		</ul>
-
-		{% if site.chapter.url %}
-			{% assign chapterURL = site.chapter.url %}
-		{% elsif page.lang == "en" %}
-			{% assign chapterURL = "/" | relative_url %}
-		{% else %}
-			{% assign chapterURL = page.lang | relative_url %}
-		{% endif %}
-
+		<div style="clear: both;"></div> 
 		<a href="{{ chapterURL }}">
 			<div id="logo-container">
 				<div id="overlay"></div>

@@ -112,6 +112,7 @@ h4 {
 }
 
 h5,
+#home,
 #languages li {
 	font-size: .9375rem;
 }
@@ -212,11 +213,28 @@ hr {
 		margin-bottom: 0;
 	}
 
+	#home,
 	#languages {
+		margin: 1rem 0;
+	}
+
+	#home {
+		float: left;
+
+		i {
+			margin-right: .25rem;
+		}
+	}
+
+	#languages {
+		float: right;
 		padding-left: 0;
+		text-align: right;
 
 		li {
-			display: inline-block;
+			display: block;
+			float: right;
+			margin-left: .25rem;
 		}
 	}
 
@@ -444,12 +462,12 @@ hr {
 			max-width: 24rem;
 		}
 
-		#top {
+		#call-us {
 			float: right;
 		}
 	}
 
-	#top {
+	#call-us {
 		display: table-cell;
 		vertical-align: top;
 		text-align: right;
@@ -466,7 +484,7 @@ hr {
 			width: 100%;
 		}
 
-		#top {
+		#call-us {
 			padding-top: 1.5rem;
 		}
 	}
