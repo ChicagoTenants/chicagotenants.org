@@ -58,3 +58,16 @@ elements:
 ```
 
 2. Commit these changes. You have a nav!
+
+### Edit the banner
+
+- Banner content is controlled by `_data/banner.yml`. Remove the file's content to hide it.
+- Here's how it works:
+
+```yaml
+text:
+  en: # Style your text with Markdown
+  es: # Add translations
+link: # Declare a link on this line to apply it to all languages
+  en: # Or add language-specific links
+``` 
