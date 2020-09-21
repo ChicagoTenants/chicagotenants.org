@@ -36,6 +36,13 @@ Hotline operators can help connect tenants to...
 
 ----
 
+### Community organizations
+
+We are powered by our members. Participating organizations include: [Albany Park Mutual Aid](https://www.albanyparkmutualaid.com/), [Autonomous Tenants Union](https://www.autonomoustenantsunion.org/), 
+[Chicago DSA](https://www.chicagodsa.org/), [Chicago Teachers Union](https://www.ctulocal1.org/), [Lincoln Square Ravenswood Solidarity Network](https://www.facebook.com/LincolnSquareRavenswoodSolidarityNetwork/), [Logan Square Mutual Aid](https://www.logansquaremutualaid.org/), [Neighbors for Affordable Housing](https://www.neighborsforaffordablehousing.org/), [Northside Action for Justice](http://www.actionforjustice.org/), [Northside Tenant Network](https://northsidetenantnetwork.wordpress.com/), [ONE Northside](http://onenorthside.org/), [Somos Logan Square](https://wearesomos.org/en/), [Tenants United](https://www.tenantsunitedchicago.org/), [Únete La Villita](https://unetelavillita.wordpress.com/), and [Uptown People's Law Center](https://www.uplcchicago.org/).
+
+----
+
 ### Our vision and values
 
 ##### Housing is a human right
