@@ -31,22 +31,30 @@ Ready to translate `my-new-page`? Create a file named `_pages/es/mi-nueva-pagina
 elements:
   - group: 
     en: Add navigation
+    es: Agregar navegación
     items:
       - page:
           en: Link to a page
+          es: Enlace a una página
           url: 
-            en: another-page
+            en: my-new-page
+            es: mi-nueva-pagina
       - page:
           en: Another link
+          es: Otro enlace
           url:
-            en: another-page
+            en: my-new-page
+            es: mi-nueva-pagina
   - group:
     en: Another group
+    es: Otro grupo
     items:
       - page:
           en: Use Markdown *styling*
+          es: Utilice Markdown *estilo*
           url:
-            en: another-page
+            en: my-new-page
+            es: mi-nueva-pagina
 ```
 
 2. Commit these changes. You have a nav!
