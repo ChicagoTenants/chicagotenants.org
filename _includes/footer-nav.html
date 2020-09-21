@@ -1,0 +1,39 @@
+{% capture top %}
+	<p id="top"><a href="#">{{ site.data.translations.back-to-top.[page.lang] | markdownify | remove: "<p>" | remove: "</p>" | strip_newlines }}</a></p>
+{% endcapture %}
+
+{% capture social %}
+	<div id="social-container">
+		<a id="twitter" class="social" href="https://twitter.com/ChiTenants">
+			<i class="fab fa-twitter"></i>
+		</a>
+		<a id="instagram" class="social" href="https://www.instagram.com/chicagotenants/">
+			<i class="fab fa-instagram"></i>
+		</a>
+		<div style="clear: both;"></div> 
+	</div>
+{% endcapture %}
+
+{% if site.data.nav.elements %}
+	<div id="nav-container">
+		{% for group in site.data.nav.elements %}
+			<div class="nav-group">
+				<h4>{{ group.[page.lang] | markdownify | remove: "<p>" | remove: "</p>" | strip_newlines }}</h4>
+				<ul>
+					{% for item in group.items %}
+						<li><a href="{{ item.page.url.[page.lang] | relative_url }}">{{ item.page.[page.lang] | markdownify | remove: "<p>" | remove: "</p>" | strip_newlines }}</a></li>
+					{% endfor %}
+				</ul>
+			</div>
+		{% endfor %}
+		{{ social }}
+		<div style="clear: both;"></div> 
+	</div>
+	{{ top }}
+{% else %}
+	<div id="nav-container" class="no-nav">
+		<p><b>{{ site.data.translations.title.[page.lang] | markdownify | remove: "<p>" | remove: "</p>" | strip_newlines }}</b></p>
+		{{ social }}	
+	</div>
+	{{ top }}
+{% endif %}

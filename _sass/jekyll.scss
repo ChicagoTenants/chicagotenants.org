@@ -20,6 +20,12 @@
 	}
 }
 
+@mixin extra-small {
+	@media screen and (max-width: #{$small-breakpoint}) {
+		@content;
+	}
+}
+
 @mixin print {
 	@media print {
 		@content;
@@ -370,7 +376,7 @@ hr {
 }
 
 #site-footer {
-	display: block;
+	display: table;
 	width: 100%;
 	margin: 2rem 0;
 	padding-top: 2rem;
@@ -381,9 +387,30 @@ hr {
 		margin-top: 0;
 	}
 
-	#left-side {
-		float: left;
-		width: 50%;
+	#nav-container {
+		display: table-cell;
+
+		.nav-group {
+			display: table-cell;
+			vertical-align: top;
+			padding-right: 4rem;
+
+			ul {
+				padding: 0;
+			}
+
+			li {
+				list-style-type: none;
+			}
+
+			h4 {
+				margin-bottom: 0;
+			}
+
+			a {
+				color: $secondary-text-color;
+			}
+		}
 
 		#social-container {
 			padding-top: .5rem;
@@ -409,21 +436,44 @@ hr {
 		}
 	}
 
+	.no-nav {
+		float: left;
+		width: 60%;
+
+		p {
+			max-width: 24rem;
+		}
+
+		#top {
+			float: right;
+		}
+	}
+
 	#top {
-		float: right;
+		display: table-cell;
+		vertical-align: top;
 		text-align: right;
 	}
 
 	@include small {
-		#left-side {
-			float: none;
+		display: block;
+
+		#nav-container {
+			display: block;
+		}
+
+		.no-nav {
 			width: 100%;
 		}
 
 		#top {
-			float: none;
-			margin-top: 1.5rem;
-			text-align: left;
+			padding-top: 1.5rem;
 		}
+	}
+
+	@include extra-small {
+		#nav-container .nav-group {
+			display: block;	
+		}	
 	}
 }

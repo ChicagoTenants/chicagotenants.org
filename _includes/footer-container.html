@@ -1,17 +1,4 @@
 <footer id="site-footer">
-	<div id="left-side">
-		<p><b>{{ site.data.translations.title.[page.lang] | markdownify | remove: "<p>" | remove: "</p>" | strip_newlines }}</b></p>
-		<div id="social-container">
-			<a id="twitter" class="social" href="https://twitter.com/ChiTenants">
-				<i class="fab fa-twitter"></i>
-			</a>
-			<a id="instagram" class="social" href="https://www.instagram.com/chicagotenants/">
-				<i class="fab fa-instagram"></i>
-			</a>
-			<div style="clear: both;"></div> 
-		</div>
-	</div>
-
-	<p id="top"><a href="#">{{ site.data.translations.back-to-top.[page.lang] | markdownify | remove: "<p>" | remove: "</p>" | strip_newlines }}</a></p>
+	{% include footer-nav.html %}
 	<div style="clear: both;"></div> 
 </footer>
