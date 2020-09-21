@@ -4,14 +4,21 @@ Portal with a directory of legal resources and community contacts.
 
 ## Updating content
 
-The English homepage can be edited by opening `index.md` and clicking on the `Edit this file` button.
-- It's written in Markdown.
-- [Here's a 2-page PDF that contains syntax examples](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf). 
+The homepages can be edited by opening the language-specific `index.md` files in `_homepage`.
+- To make immediate changes, click the `Edit this file` button. 
+- Content is written in Markdown. [Here's a 2-page PDF that contains syntax examples](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf). 
 
-If you want to add additional site translations, go to `_translations` and duplicate `es.md`.
-- With `es.md `, `es` defines the URL as `my-website.org/es`.
-- Inside the file, `language-name: Español` sets the language's display name as `Español`.
-- `language-code: es_LA` helps search engines recognize the page's language.
-- `translated-site-name` and `translated-site-description` show up in search results.
-- `image` defines a custom preview image for social media. It contains a language-specific logo. If you leave this blank, the English logo will be used.
-- The list of languages at the top of the website is automatically populated by the files inside  `_translations`.
+To add more pages, create Markdown files within `_pages/en` and `_pages/es`. Within each file, add this:
+
+```markdown
+---
+lang-ref: my-new-page
+title: <!-- sets the window title -->
+description: <!-- displays text below logos, overrides the site description used in search results -->
+subhead: <!-- displays text below logos, doesn't override the site description -->
+---
+
+Hello, world!
+```
+
+`lang-ref` allows users to stay on the page and switch languages.
