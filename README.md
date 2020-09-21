@@ -21,4 +21,4 @@ subhead: <!-- displays text below logos, doesn't override the site description -
 Hello, world!
 ```
 
-Ready to translate `my-new-page`? Create another file named `_pages/es/mi-nueva-pagina` and use the same `lang-ref`.
+Ready to translate `my-new-page`? Create a file named `_pages/es/mi-nueva-pagina` and use the same `lang-ref`.
