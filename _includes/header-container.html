@@ -51,13 +51,7 @@
 		</a>
 
 		{% if page.subhead %}
-			{% assign subhead = page.subhead %}
-		{% elsif page.description %}
-			{% assign subhead = page.description %}
-		{% endif %}
-
-		{% if subhead %}
-			<p id="subhead">{{ subhead | markdownify | remove: "<p>" | remove: "</p>" | strip_newlines }}</p>
+			<p id="subhead">{{ page.subhead | markdownify | remove: "<p>" | remove: "</p>" | strip_newlines }}</p>
 			<hr>
 		{% endif %}
 	</div>

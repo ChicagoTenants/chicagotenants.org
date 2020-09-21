@@ -1,6 +1,7 @@
 ---
 lang-ref: organizations
 title: Organizaciones comunitarias
+description: CTM es una coalición. Aprenda quién nos impulsa.
 ---
 
 ### Organizaciones comunitarias

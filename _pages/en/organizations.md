@@ -1,6 +1,7 @@
 ---
 lang-ref: organizations
 title: Community organizations
+description: CTM is a coalition. Learn about who powers us.
 ---
 
 ### Community organizations
