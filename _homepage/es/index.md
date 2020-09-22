@@ -14,7 +14,7 @@ para conectarse con organizadores experimentados
 ### Llame a nuestra línea directa
 
 Los operadores de la línea directa pueden ayudar a conectar a los inquilinxs con...
-- Reuniones de casos semanales con organizadoras de inquilinxs
+- Reuniones semanales de trabajo de casos con organizadores de inquilinxs
 - Asistencia legal (si ha recibido una notificación o presentación de desalojo)
 - Redes locales de ayuda mutua
 
