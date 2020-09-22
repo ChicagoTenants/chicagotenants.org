@@ -1,6 +1,7 @@
 ---
 lang-ref: vision
 title: Our vision and values
+description: We are rooted in people power. We fight for our communities. 
 ---
 
 ### Our vision and values

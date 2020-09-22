@@ -1,6 +1,7 @@
 ---
 lang-ref: vision
 title: Nuestra visión y valores
+description: Estamos arraigados en el poder de la gente. Luchamos por nuestras comunidades.
 ---
 
 ### Nuestra visión y valores
