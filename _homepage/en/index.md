@@ -13,7 +13,7 @@ Organizing with your neighbors is an essential step to winning a deal with your 
 ### Call our hotline 
 
 Hotline operators can help connect tenants to...
-- Tenant organizers in their area
+- Weekly casework meetings with tenant organizers
 - Legal aid (if you've received an eviction notice or filing)
 - Local mutual aid networks
 
