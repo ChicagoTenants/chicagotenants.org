@@ -19,6 +19,7 @@ We're powered by our members. Participating organizations include:
 - [Northside Action for Justice](http://www.actionforjustice.org/)
 - [Northside Tenant Network](https://northsidetenantnetwork.wordpress.com/)
 - [ONE Northside](http://onenorthside.org/)
+- Solidaridad Inquilina (Soli) SW Side
 - [Somos Logan Square](https://wearesomos.org/en/)
 - [Tenants United](https://www.tenantsunitedchicago.org/)
 - [Únete La Villita](https://unetelavillita.wordpress.com/)
