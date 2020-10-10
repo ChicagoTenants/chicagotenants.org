@@ -6,9 +6,8 @@ description: CTM is a coalition. Learn about who powers us.
 
 ### Community organizations
 
-We're powered by our members. Participating organizations include: 
+We're powered by our members. Participating organizations include:
 
-- [48th Ward Neighbors for Justice](https://48thneighbors.org/)
 - [Albany Park Mutual Aid](https://www.albanyparkmutualaid.com/)
 - [Autonomous Tenants Union](https://www.autonomoustenantsunion.org/)
 - [Chicago DSA](https://www.chicagodsa.org/)

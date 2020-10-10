@@ -8,7 +8,6 @@ description: CTM es una coalición. Aprenda quién nos impulsa.
 
 Somos impulsados ​​por nuestros miembros. Las organizaciones participantes incluyen:
 
-- [48th Ward Neighbors for Justice](https://48thneighbors.org/)
 - [Albany Park Mutual Aid](https://www.albanyparkmutualaid.com/)
 - [Autonomous Tenants Union](https://es.autonomoustenantsunion.org/)
 - [Chicago DSA](https://www.chicagodsa.org/)
